@@ -1,6 +1,6 @@
 # javascript-training
 
-Serie d'exercice pour apprendre le javascript:
+Série d'exercice pour apprendre le javascript:
 
 ### Exercice:
 
