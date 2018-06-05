@@ -1,22 +1,8 @@
-//Exercice 1
-function surfaceRectangle(){
+//Exercice 2
 
-  var largeur = prompt("Saisissez une largeur:");
-  var longueur = prompt("Saisissez une longueur:");
+  var rayon = prompt("Quel est le rayon du cercle:")
 
-  var surface = largeur * longueur;
-
-  alert("la surface du rectangle est de: "+surface);
-
-}
-
-function periRectangle(){
-
-  var largeur = prompt("Saisissez une largeur:");
-  var longueur = prompt("Saisissez une longueur:");
-
-  var perimetre = (largeur * 2) + (longueur * 2);
-
-  alert("le périmetre du rectangle est de: "+perimetre);
-
+function cercle(){
+  var reponse = (rayon * 2) * 3.14;
+  return alert(reponse);
 }
