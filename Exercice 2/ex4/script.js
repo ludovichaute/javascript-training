@@ -1,17 +1,17 @@
-//Exercice 3
+//Exercice 4
 
-var a = 3, b = 2;
+var tab = [-2, 1, 4];
 
-function triple(x) {
+function additionne(x) {
+  var add = x + 2;
 
-  var triple = x*3;
-
-  return triple;
+  return add;
 
 }
-
 function afficher(){
+    var a = tab[0];
+    alert("l'addition de "+a+" est: "+additionne(a));
+    var a = tab[2];
+    alert("l'addition de "+a+" est: "+additionne(a));
 
-  alert("le triple de "+a+" est: "+triple(a));
-  alert("le triple de "+b+" est: "+triple(b));
-}
+  }
