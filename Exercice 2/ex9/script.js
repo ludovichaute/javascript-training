@@ -10,8 +10,13 @@ Il affiche ensuite la chaîne saisie entre guillemets.
 
 
 function testWhile() {
-  do {
-    var lettre = prompt("entrer une lettre: ")
-  } while (lettre !== "p");
+  let verif = false;
+  while (verif == false){
+    let lettre = prompt("entrer un mot content la lettre p")
+    let lettrelow = lettre.toLocaleLowerCase();
+    verif = lettrelow.includes("p");
+  }
   alert("\""+lettre+'"');
+
+
 }
