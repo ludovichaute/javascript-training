@@ -12,37 +12,41 @@ Cette fonction va calculer la moyenne des nombres entrés au clavier :
 - la fonction affiche le nombre de valeurs entrées
 - la fonction affiche la moyenne
 */
-function calculMoyenne(){
-
-    var nb = prompt("entrer un nombre entier:");
-    var nombres = parseInt(nb);
-    var nbr = isNaN(nb);
-
-    while (nbr === true){
-      if (nbr === true){
-        alert("Erreur");
-        var nb = prompt("entrer un nombre entier:");
-        var nombres = parseInt(nb);
-        var nbr = isNaN(nb);
-      }
-      else {
-        while (nombres >= 0) {
-
-        }
-        var add = 0;
-
-        for (var i = 0; i < 3; i++) {
-          var nbr = prompt("entrer un nombre entier:");
-          nbr = parseInt(nbr);
-          add += nbr;
-          }
-          var nbAdd = add;
-
-      }
-
-      }
-
-
-console.log(nbr);
-console.log(nombre);
+isFloat = function(number) {
+   try {
+     return (number.toString().indexOf(".") != -1);
+   } catch (ex) { return false; }
 }
+
+function calculMoyenne() {
+
+
+
+var tab = [];
+var nbTotal = 0;
+var nbIn = 0;
+var moyenne = 0;
+
+  do {
+    var input = prompt("enter un nombre entier:");
+    var testIn =  isNaN(input);
+
+    if (testIn === true || isFloat(input) === true) {
+        alert("Erreur vous n'avez pas enter un nombre entier");
+    } if (testIn === false && input >= 0 && isFloat(input) === false) {
+      var input = parseFloat(input);
+      tab.push(input);
+    }
+  } while (input >= 0 || testIn === true);
+
+  for (var i = 0; i < tab.length; i++) {
+    nbTotal = tab[i] + nbTotal;
+    nbIn++;
+  }
+
+  moyenne = nbTotal / nbIn;
+
+  alert("Vous avez entrés "+nbIn+" chiffre(s)\n et " +moyenne+ " est la moyenne.")
+
+
+ }
