@@ -1,8 +1,8 @@
 //Exercice 7
 
 function faireChoix(){
-    var x = prompt("choix")
-    var choix = parseInt(x);
+    
+    var choix = parseInt(prompt("choix"));
 
     switch (choix){
       case 1:
