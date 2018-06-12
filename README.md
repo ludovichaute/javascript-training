@@ -8,7 +8,7 @@ Série d'exercice pour apprendre le javascript:
 
 - [x] Introduction à Javascript
 - [x] Entrainement : Première série
-- [ ] Entrainement : Deuxième série
+- [x] Entrainement : Deuxième série
 - [ ] Cours : 02 - Le DOM
 - [ ] Entrainement : Troisième série
 - [ ] Entrainement : Quatrième série
