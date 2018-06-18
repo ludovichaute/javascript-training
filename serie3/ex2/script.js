@@ -17,4 +17,3 @@ function myFocusFunction() {
 function myOutFunction() {
   x.getAttributeNode("value").value = "Merci de votre participation";
 }
-
