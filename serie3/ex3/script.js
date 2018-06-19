@@ -5,26 +5,20 @@ Dans le fichier HTML fourni, afficher,
 dès que l'on entre une valeur dans l'input, une boite de dialogue avec la valeur de cet input.
 */
 
-var x = document.getElementById("nom");
+let a = document.getElementById("nom");
 
-x.addEventListener("focusout", myOutFunction);
-x.addEventListener("focusin", myFocusFunction);
+a.addEventListener("keypress", inputKey);
 
+ a = document.getElementById("nom").value;
 
-document.getElementById("nom").addEventListener("keypress", input);
+function inputKey(event){
+  a = document.getElementById("nom").value;
 
-
-function myFocusFunction() {
-  x.getAttributeNode("value").value = "";
+  if (event.which == 13 || event.keyCode == 13) {
+    a = document.getElementById("nom").value;
+    alert(a)
+    return false;
 }
+return true;
 
-function myOutFunction() {
-  x.getAttributeNode("value").value = "Merci de votre participation";
 }
-
-function input()
-{
-  var input = document.getElementById("nom").value;
-  alert(input);
-}   
-
