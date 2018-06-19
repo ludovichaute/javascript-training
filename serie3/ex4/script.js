@@ -4,10 +4,12 @@
 Dans le fichier HTML fourni, faire que le bouton RAZ efface les données des champs du formulaire.
 */
 
-document.getElementById('button').onclick = function(){button()};
+document.getElementById('button').onclick = button;
+
 function button(){
-  var tab = document.getElementsByTagName("input");
-    for (let i = 0; i < tab.length; i++) {
-      document.getElementsByTagName("input")[i].value = "";
-    }
+  
+      document.getElementById("nom").value = "";
+      document.getElementById("ville").value = "";
+      document.getElementById("prenom").value = "";
+
 }
