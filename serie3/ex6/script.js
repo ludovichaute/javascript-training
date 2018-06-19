@@ -11,7 +11,7 @@ document.getElementById("image1").addEventListener("mouseover", mouseOver);
 document.getElementById("image5").addEventListener("mouseout", mouseOut);
 
 var zPlus = 0;
-
+document.querySelector("img:nth-child(1)").style.zIndex = 1;
 
 function mouseOver() { 
   console.log('in'); 
