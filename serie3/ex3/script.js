@@ -13,7 +13,6 @@ a.addEventListener("keypress", inputKey);
 
 function inputKey(event){
   a = document.getElementById("nom").value;
-
   if (event.which == 13 || event.keyCode == 13) {
     a = document.getElementById("nom").value;
     alert(a)
