@@ -9,9 +9,9 @@ Série d'exercice pour apprendre le javascript:
 - [x] Introduction à Javascript
 - [x] Entrainement : Première série
 - [x] Entrainement : Deuxième série
-- [ ] Cours : 02 - Le DOM
-- [ ] Entrainement : Troisième série
-- [ ] Entrainement : Quatrième série
+- [x] Cours : 02 - Le DOM
+- [x] Entrainement : Troisième série
+- [x] Entrainement : Quatrième série
 - [ ] Entrainement : Cinquième série
 - [ ] Entrainement : Sixième série
 - [ ] Cours : 03 - Canvas
